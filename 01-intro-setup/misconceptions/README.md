@@ -1,4 +1,4 @@
-Here’s a clean, structured, beginner-friendly **GitHub-style Markdown section** for **Misconceptions About TypeScript**, continuing the same educational flow:
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
 
 ---
 
@@ -68,5 +68,4 @@ Before diving deeper, it’s important to clear up some common misunderstandings
 | Hard to learn            | Built on top of familiar JavaScript |
 
 ---
-
-Would you like to go into **Basic Types** next to start using TypeScript practically?
+![Static Badge](https://img.shields.io/badge/Aditya%20Kumar-black?style=for-the-badge&logo=atlasos&logoColor=%23ffffff)

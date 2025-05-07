@@ -1,6 +1,7 @@
-Got it! Here's a properly structured and clean **GitHub README-style Markdown section** for **“Why TypeScript?”**, designed for an absolute beginner, with consistent heading levels, spacing, and layout — no emojis, no fluff:
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
 
 ---
+
 
 # Why TypeScript?
 
@@ -70,4 +71,4 @@ TypeScript helps you:
 
 ---
 
-Would you like this format for the next topic like **“Installing TypeScript”** or **“Basic Types”**?
+![Static Badge](https://img.shields.io/badge/Aditya%20Kumar-black?style=for-the-badge&logo=atlasos&logoColor=%23ffffff)

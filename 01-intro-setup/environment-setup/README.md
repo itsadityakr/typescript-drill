@@ -1,4 +1,4 @@
-Here is a clean, beginner-focused **GitHub README-style Markdown section** for **Environment Setup for TypeScript**, continuing the same formatting style:
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
 
 ---
 
@@ -118,5 +118,4 @@ node dist/hello.js
 * Use `npx tsc` to compile TypeScript to JavaScript.
 
 ---
-
-Would you like to proceed with **Basic Types in TypeScript** next?
+![Static Badge](https://img.shields.io/badge/Aditya%20Kumar-black?style=for-the-badge&logo=atlasos&logoColor=%23ffffff)

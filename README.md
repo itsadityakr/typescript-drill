@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge" style="width: 100%;">
+
 # TypeScript Drill 🚀
 
 Welcome to the **TypeScript Drill** repository! This repo contains a series of exercises and examples designed to help you master TypeScript, from basic types to advanced features, and project setups. Each folder contains organized, practical lessons with explanations and code examples.

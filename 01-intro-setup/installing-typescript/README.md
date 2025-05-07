@@ -1,4 +1,4 @@
-Here's a clean and beginner-friendly **GitHub README-style Markdown** section for **"Installing TypeScript"**, continuing from the previous format:
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
 
 ---
 
@@ -87,5 +87,4 @@ node hello.js
 * ✅ Run the output `.js` files with `node`
 
 ---
-
-Ready to move on to **setting up a project folder** or **basic types** next?
+![Static Badge](https://img.shields.io/badge/Aditya%20Kumar-black?style=for-the-badge&logo=atlasos&logoColor=%23ffffff)
