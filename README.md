@@ -126,3 +126,4 @@ If you would like to contribute, feel free to open a pull request with improveme
 This repository is licensed under the MIT License.
 
 ---
+![Static Badge](https://img.shields.io/badge/Aditya%20Kumar-black?style=for-the-badge&logo=atlasos&logoColor=%23ffffff)
