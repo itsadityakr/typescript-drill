@@ -2,89 +2,142 @@
 
 ---
 
-# Installing TypeScript
+# Installing TypeScript and Common Commands
 
-To start using TypeScript, you need to install it on your system using **Node.js** and **npm (Node Package Manager)**.
+To start using TypeScript, you need Node.js and the TypeScript compiler (`tsc`) installed on your machine. This section walks you through the entire setup, verifies installations, and explains the most common TypeScript commands.
 
 ---
 
-## 1. Prerequisites
+## Step 1: Check if Node.js is installed
 
-Before installing TypeScript, make sure you have **Node.js** installed.
-
-### Check if Node.js is installed:
+TypeScript runs on Node.js, so make sure Node is available.
 
 ```bash
-node -v
-npm -v
+node --version
 ```
 
-If not installed, download from: [https://nodejs.org](https://nodejs.org)
+If it outputs a version like `v18.17.0`, you're good to go. If not, download and install Node.js from [https://nodejs.org](https://nodejs.org).
 
 ---
 
-## 2. Install TypeScript Globally
+## Step 2: Install TypeScript globally
 
-This allows you to use the `tsc` (TypeScript Compiler) command from anywhere.
+You can install TypeScript globally using any package manager like `npm`, `pnpm`, or `yarn`.
+
+### Using npm:
 
 ```bash
 npm install -g typescript
 ```
 
-### Check if installed:
+### Using pnpm:
 
 ```bash
-tsc -v
+pnpm add -g typescript
 ```
 
-> ✅ Output Example: `Version 5.3.2` (your version may differ)
+This installs the TypeScript compiler and makes the `tsc` command available.
 
 ---
 
-## 3. Create a TypeScript File
+## Step 3: Check TypeScript installation
 
-You can now create a `.ts` file and start coding.
+After installation, verify it using:
 
-```ts
-// hello.ts
-let message: string = "Hello, TypeScript!";
-console.log(message);
+```bash
+tsc --version
 ```
+
+You should see something like `Version 5.x.x`.
 
 ---
 
-## 4. Compile TypeScript to JavaScript
+## Step 4: Initialize a TypeScript project
 
-Use the `tsc` command to convert `.ts` to `.js`.
+There are two common ways to initialize TypeScript in a project:
 
-```bash
-tsc hello.ts
-```
-
-This creates a new `hello.js` file:
-
-```js
-// hello.js
-var message = "Hello, TypeScript!";
-console.log(message);
-```
-
-Run it with Node.js:
+### Option 1: Global `tsc` command
 
 ```bash
-node hello.js
+tsc --init
 ```
 
-> ✅ Output: `Hello, TypeScript!`
+This creates a `tsconfig.json` file in your project directory, which is used to configure the TypeScript compiler settings.
+
+### Option 2: Using `npx` (if not installed globally)
+
+```bash
+npx tsc --init
+```
+
+This works even if `tsc` isn't installed globally. `npx` downloads and runs it just-in-time.
 
 ---
 
-## 5. Summary
+## Step 5: Understanding `tsconfig.json`
 
-* ✅ Install Node.js and npm
-* ✅ Install TypeScript globally with `npm install -g typescript`
-* ✅ Compile `.ts` files using `tsc`
-* ✅ Run the output `.js` files with `node`
+The `tsconfig.json` file tells TypeScript how to compile your code. It includes settings like:
+
+```json
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true
+  }
+}
+```
+
+You can customize it based on your project structure and needs.
+
+---
+
+## Step 6: Compiling TypeScript Files
+
+To compile a TypeScript file (e.g., `app.ts`) to JavaScript:
+
+```bash
+tsc app.ts
+```
+
+This will create `app.js` in the same directory.
+
+If you have multiple files and a `tsconfig.json`:
+
+```bash
+tsc
+```
+
+This compiles the entire project according to your configuration.
+
+---
+
+## Step 7: Watch for changes
+
+For continuous development, use:
+
+```bash
+tsc --watch
+```
+
+This watches your TypeScript files and automatically re-compiles them when you make changes.
+
+---
+
+## Summary of Useful Commands
+
+| Command               | Purpose                                              |
+| --------------------- | ---------------------------------------------------- |
+| `node --version`      | Check if Node.js is installed                        |
+| `tsc --version`       | Check installed TypeScript version                   |
+| `tsc --init`          | Create a `tsconfig.json` file                        |
+| `npx tsc --init`      | Initialize TypeScript project without global install |
+| `npm i typescript -g` | Install TypeScript globally                          |
+| `tsc app.ts`          | Compile a single TypeScript file                     |
+| `tsc`                 | Compile all files using `tsconfig.json`              |
+| `tsc --watch`         | Automatically recompile on file changes              |
 
 ---
 ![Static Badge](https://img.shields.io/badge/Aditya%20Kumar-black?style=for-the-badge&logo=atlasos&logoColor=%23ffffff)
